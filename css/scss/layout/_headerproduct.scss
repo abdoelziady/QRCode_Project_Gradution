@@ -1,0 +1,475 @@
+/* ========================================== */
+/* ========================================== */
+@import "../helpers/_rulesstyle";
+/* ========================================== */
+// Start Slider
+.slider_product
+{
+    background-image: url("../../../imgs/product/slider_product.jpeg");
+    margin-top: 75px;
+    margin-bottom: 0px !important;
+        width:100%;
+        height:450px;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center;
+        position:relative;
+        .navall
+        {
+            position: absolute;
+            bottom: 0px;
+            left: 10px;
+            .breadcrumb
+            {
+                background-color: transparent;
+                .breadcrumb-item
+                {
+                    a 
+                    {
+                        color: $maincolor;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .overlayall
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;  
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0,0,0, 0.7);
+            width: 100%;
+            height: 100%;
+        h1
+        {
+            position:absolute;
+            color: $maincolor;
+            font-size:80px;
+            text-transform:uppercase;
+            font-weight:bold;
+        }
+        }
+
+}
+// End Slider
+/* ========================================== */
+/* ========================================== */
+// Start Section Two_Slider_Blue
+.Two_Slider_Blue
+{
+    margin-top: -205px !important;
+background-color: #1974D2;
+padding-top: $paddt + 30px;
+padding-bottom: $paddb + 30px;
+position: relative;
+.btndown
+ {
+     position: absolute;
+     bottom: 50px;
+     left: 48%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   i {
+        cursor: pointer;
+        font-size: 50px;
+        color: $seccolor;
+        animation: angry-animation 1.5s linear infinite normal; }
+        @keyframes angry-animation {
+            100% ,0% {
+              transform: translateY(0px);
+              opacity: .5; }
+            50% {
+              transform: translateY(30px);
+              opacity: 1; } }
+ }
+.first 
+{
+    padding-top: 30px;
+    margin-bottom: 90px;
+    color: $seccolor;
+    text-transform: capitalize;
+    h2 
+    {
+        font-size: 52px;
+        font-weight: 900;
+        margin-bottom: 30px;
+    }
+    p 
+    {
+        color: rgb(228, 227, 227);
+        font-size: 21px;
+        margin-bottom: 80px;
+    }
+    .link_butt 
+    {
+        background-color: #d4246a;
+        font-size: 17px;
+        font-weight: 900;
+        &:after 
+        {
+            background-color:#da6292;
+        }
+    }
+
+}
+.last 
+{
+    width: 100%;
+    height: 100%;
+    img 
+    {
+        width: 100%;
+        height: 100%;
+    }
+}
+}
+// End Section Two_Slider_Blue
+/* ========================================== */
+/* ========================================== */
+// Start Section Three_Blogs_Product
+.Three_Blogs_Product
+{
+    .one_product ,.three_product
+    {
+        padding-top: $paddt + 30px;
+        padding-bottom: $paddb;
+        background-color:#F7F8F9;
+    }
+    .two_product
+    {
+        background-color: $seccolor;
+    }
+        .one_product , .two_product ,.three_product
+        {
+            .first 
+{
+    color: $seccolor;
+    text-transform: capitalize;
+    padding-top: 40px;
+    margin-bottom: 50px;
+    h5 
+    {
+font-weight: 900;
+text-transform: uppercase;
+color: #53678C;
+font-size: 19px;
+    }
+    h2 
+    {
+        font-size: 36px;
+        font-weight: 900;
+        color: #1B294B;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    p 
+    {
+        color:#6a788d;
+        font-size: 19px;
+        margin-bottom: 40px;
+        line-height: 1.8;
+        width: 95%;
+    }
+    a 
+    {
+        font-weight: bold;
+        font-size: 17px;
+        text-transform: uppercase;
+        color: $maincolor;
+        text-decoration: none;
+        border-bottom: 2px solid $maincolor;
+        @include trans;
+        &:hover 
+        {
+            color: $thrcolor;
+            border-bottom: 2px solid $thrcolor;
+        }
+    }
+
+}
+.last 
+{
+    width: 100%;
+    height: 100%;
+    img 
+    {
+        width: 100%;
+        height: 100%;
+    }
+}
+        }
+}
+// End Section Three_Blogs_Product
+/* ========================================== */
+/* ========================================== */
+// Start Section Product_sales
+.Product_sales
+{
+    padding-top: $paddt;
+    padding-bottom: $paddb;
+    .head 
+    {
+        font-size: 35px;
+        margin-bottom: 120px;
+        span 
+        {
+            color: $maincolor;
+        }
+    }
+    .Product_sales_section
+    {
+        text-align: center;
+        margin-bottom: 80px;
+        h3 
+        {
+            font-size: 30px;
+            color: $thrcolor
+        }
+        p 
+        {
+            margin-bottom: 20px;
+            color: gray;
+            text-transform: capitalize;
+            font-size: 17px;
+            width: 95%;
+            margin-left:auto;
+            margin-right: auto;
+        }
+        img 
+        {
+            border-radius: 5px;
+            box-shadow: $mainsha;
+            margin: 0px auto;
+            width: 99%;
+        }
+    
+    }
+}
+// End Section Product_sales
+/* ========================================== */
+/* ========================================== */
+// Start Section Slider_footer
+.Slider_footer
+{
+    margin-top: $paddt + $paddt + $paddt + 30px;
+    width: 100%;
+    position: relative;
+    .Slider_footer_overlay
+    {
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        background-color: #EAF8FC;
+        top: -225px;
+        left: 0px;
+        padding: 10px;
+        text-align: center;
+        padding-top: 60px;
+        text-transform: capitalize;
+        h5 
+        {
+font-weight: 900;
+text-transform: uppercase;
+color: #53678C;
+        }
+        h2 
+        {
+color: #1B294B;
+margin-top: 25px;
+font-weight: bold;
+margin-bottom: 25px;
+font-size: 40px;
+        }
+        p 
+        {
+font-size: 19px;
+color:#6a788d;
+margin: 0px auto;
+width: 75%;
+        }
+    }
+    img 
+    {
+        width: 100%;
+        height: 100%;
+    }
+}
+// End Section Slider_footer
+/* ========================================== */
+/* ========================================== */
+// Start Section Questions
+.Questions_product
+{
+    padding-top: $paddt;
+    padding-bottom: $paddb; 
+    .questionalll
+    {
+      margin-top: 110px;
+      .Questions_img 
+      {
+        margin-top: -50px;
+        height: 550px;
+        width: 90%;
+        margin: 0px auto 40px;
+        img 
+        {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .accordion
+      {
+        .card 
+        {
+          // border: none;
+          background-color: $seccolor;
+          border-bottom:1px solid lightgray;
+          button
+          {
+            text-transform: capitalize;
+            font-size: 18px;
+            font-weight: bold;
+            &:hover ,&:focus 
+            {
+              color: $thrcolor;
+              text-decoration: none;
+            }
+          }
+          .card-body 
+          {
+            color: rgb(112, 110, 110);
+            text-transform: capitalize;
+            line-height: 1.8;
+          }
+        }
+      }
+    }
+ 
+}
+// End Section Questions
+/* ========================================== */
+/* ========================================== */
+// ========== Media Query ===================
+/* ========================================== */
+@media (max-width:992px)
+{
+    /* ========================================== */
+.Slider_footer
+{
+    .Slider_footer_overlay
+    {
+        height: 70%;
+        top: -230px;
+    }
+  
+}
+/* ========================================== */
+.Two_Slider_Blue
+{
+    .btndown 
+    {
+        display: none;
+    }
+}
+/* ========================================== */
+}
+// Slider ==========================
+// Slider All ==========================
+@media (max-width:768px)
+{
+    .slider_product
+{   
+    margin-top: 65px;
+        .navall
+        {
+            .breadcrumb
+            {
+                .breadcrumb-item
+                {
+                    a 
+                    {
+                       font-size: 15px;
+                    }
+                }
+            }
+        }
+    .overlayall
+    {
+    h1
+    {
+        font-size:65px;
+    }
+}
+}
+// ====================================
+.Two_Slider_Blue
+{
+    margin-top: -200px !important;
+    padding-top: $paddt + 20px;
+}
+// =====================================
+.Questions 
+{
+  .head 
+  {
+      &:after 
+      {
+          left: 42.5%;
+      }
+  }
+}
+// =====================================
+.Slider_footer
+{
+    .Slider_footer_overlay
+    {
+        height: 120%;
+        top: -290px;
+        p 
+        {
+            width: 95%;
+        }
+    }
+    img 
+    {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// ================================
+}
+
+/* ========================================== */
+/* ========================================== */
+/* ========================================== */
+/* ========================================== */
+// Services_about
+@media (max-width:575px)
+{
+    .Slider_footer
+    {
+        .Slider_footer_overlay
+        {
+            height: 190%;
+            top: -360px;
+            p 
+            {
+                width: 95%;
+            }
+        }
+        img 
+        {
+            width: 100%;
+            height: 100%;
+        }
+    }
+  
+// =========================================
+}
+/* ========================================== */
+/* ========================================== */

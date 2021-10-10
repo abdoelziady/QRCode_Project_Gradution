@@ -1,0 +1,337 @@
+/* ========================================== */
+/* ========================================== */
+@import "../helpers/_rulesstyle";
+/* ========================================== */
+/* Start Section Footer */
+.footer
+{
+    .footer_light
+    {
+        background-color: $maincolor;
+        padding: 20px;
+        text-transform: capitalize;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        h4 
+        {
+color: $seccolor;
+margin-top: 5px ;
+font-weight: bold;
+        }
+        h6 
+        {
+margin: 0px;
+color: $seccolor;
+font-size: 17px;
+margin-top: 10px ;
+        }
+        .link_butt
+        {
+            // margin: 50px auto 20px;
+            width: 130px;
+            height: 40px;
+            line-height: 40px;
+            display: block;
+        }
+        
+    }
+/* ========================================== */
+/* ========================================== */
+    .footer_dark
+    {
+    padding-top: 80px;
+     background-color: $thrcolor;
+ .foot 
+ {
+    .navbar-brand {
+        font-size: $mainsize +13;
+        color: $maincolor;
+        letter-spacing: .4px;
+        font-weight: 500;
+        text-transform: uppercase;
+         @include trans;
+    &:hover
+    {
+        transform: scale(1.1);
+    }
+    span 
+    {
+        text-transform: capitalize;
+    }
+ }
+p
+{
+    width:100%;
+    color: lightgray;
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 30px;
+    margin-top: 35px;
+}
+h3
+{
+    font-size: 15px;
+    font-weight: 500;
+     transition: all .5s ease-in-out;
+     color: #777;
+     line-height: 1.7;
+     i 
+     {
+         color: red;
+     }
+}
+    
+ }
+ .foot2 
+ {
+    h4
+    {
+         padding-left:0px;
+         font-weight: bold;
+         font-size: 22px;
+         letter-spacing: 1px;
+         color: $maincolor;
+         transform: translateY(15px);
+    }
+  .ulll 
+  {
+    transform: translateY(55px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    ul 
+    {     
+        a 
+        {
+        margin-bottom: 35px;
+           @include trans;
+           color: #999;
+           font-size: 15px;
+           display: block;
+            cursor: pointer;
+            text-decoration: none;
+            &:hover
+        {
+            transform: translateX(10px);
+            color: $maincolor;
+            font-weight: bold;
+        }
+        i
+        {
+            cursor: pointer;
+            color:$maincolor;
+            margin-right:5px;
+        }
+        }
+    }
+    ul:last-of-type 
+    {
+        transform: translateX(-35px);
+    }
+  }
+ }
+ .foot3  
+ {
+    h4
+    {
+         padding-left:0px;
+        font-weight: bold;
+        font-size: 22px;
+        letter-spacing: 1px;
+        color: $maincolor;
+        transform: translateY(15px);
+    }
+    .linksfoot3
+    {
+    h3
+    {
+        transform: translateY(55px);
+        font-size:16px;
+         color:#999;
+        font-weight:normal;
+        line-height:1.7;
+        margin-bottom: 25px;
+        span 
+        {       i 
+            {
+                margin-right:12px ;
+            @include trans;
+            cursor: pointer;
+            &:hover 
+            {
+                transform: scale(1.1);
+                color: $maincolor;
+            }
+        }
+    }
+    }
+}
+ }
+
+ .foot4 
+ {
+     h4 
+     {
+        padding-left:0px;
+        font-weight: bold;
+        font-size: 22px;
+        letter-spacing: 1px;
+        color: $maincolor;
+        transform: translateY(15px);
+     }
+      p 
+      {
+        transform: translateY(45px);
+        color: #999;
+        padding-top: 0px;
+        margin-bottom: 60px;
+      }
+      .form-group
+      {
+        input 
+        {
+            margin-top: 20px;
+            background-color: rgba($color: rgb(238, 234, 234), $alpha: 0.1);
+            border: none;
+            &:focus 
+            {
+                outline: none;
+                border: 1px solid $maincolor;
+                box-shadow: 0 0 0 0.2rem rgba(25, 117, 214, 0.25);
+            }
+        }
+      }
+      .link_butt
+      {
+          margin-top: 50px;
+          width: 130px;
+          height: 40px;
+          line-height: 40px;
+      }
+ }
+
+ .foottttlast
+ {
+     margin-top: 80px;
+     padding-top: 20px;
+     border-top: 1px solid rgb(90, 89, 89);
+.fo 
+{
+    h6 
+    {
+        color: #999;
+        font-size: 15px;
+        a 
+        {
+            color: $maincolor;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+    .spanfoot
+    {
+        margin-right:90px;
+   a 
+   {
+       text-decoration: none;
+    i
+    {
+        margin-left: 25px;
+        font-size: 18px;
+        color:#777;
+        @include trans;
+        cursor: pointer;
+        &:hover 
+        {
+            transform: scale(1.2);
+            color: $maincolor;
+        }
+
+    }
+   }
+    }
+}
+}
+    }
+
+}
+/* ========================================== */
+/* ========================================== */
+// ========== Media Query ===================
+/* ========================================== */
+@media (max-width:767px)
+{
+    .footer 
+    {
+      .foot2 {
+        .ulll 
+        {
+          justify-content: start;
+           ul:last-of-type
+           {
+               transform: translateX(150px);
+           }
+        }
+      }
+      .foot4 
+      {
+         transform: translateY(30px);;
+         .form-group
+         {
+           input 
+           {
+              width: 300px;
+           }
+        }
+      }
+    }
+}
+/* ========================================== */
+/* ========================================== */
+@media (max-width:992px)
+{
+    .footer 
+    {       
+         .foot2 ul li 
+    {
+    font-size:17px;
+    }
+     .foot
+        {
+            margin-bottom:30px;
+        }
+     .foot p
+    {
+        width:100%;
+        margin-top: 25px;
+    }
+    .foot4 ,.foot3
+    {
+        margin-top: 30px;
+    }
+
+    .footer_light
+    {
+        flex-direction: column;
+        h4 
+        {
+            margin-top: 20px;
+        }
+        h6 
+        {
+margin-bottom: 20px;
+        }
+        .link_butt
+        {
+            width: 160px;
+            margin-bottom: 20px;
+        }
+    }
+    }
+}
+// ============================================
+// ============================================
+

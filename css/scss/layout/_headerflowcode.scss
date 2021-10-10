@@ -1,0 +1,808 @@
+/* ========================================== */
+/* ========================================== */
+@import "../helpers/_rulesstyle";
+/* ========================================== */
+// Start  Section Create_Flowcode
+.Create_Flowcode
+{
+  padding-bottom: $paddb;
+  padding-top: $paddt - 20px;
+  margin-top: -570px;
+  background-color:$mainbg;
+  .step_one
+  {
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 10px;
+    box-shadow:3px 0px 15px rgb(148, 148, 148);
+    background-color: $seccolor;
+    text-decoration: none;
+    .step1text
+    {
+       padding: 15px;
+       padding-bottom: 20px;
+      h4 
+      {
+  color: $maincolor;
+  font-weight: bold;
+  span 
+  {
+    color: $thrcolor;
+    font-size: 21px;
+    font-weight: 500;
+  }
+      }
+    }
+    .step1_span
+    {
+      display: flex;
+      padding: 10px 5px;
+      margin-bottom: 15px;
+      text-decoration: none;
+      color: $thrcolor;
+      cursor: pointer;
+      @include trans;
+    margin-right: 5px;
+      i 
+      {
+        flex: 1;
+        font-size: 18px;
+        @include trans;
+      }
+      span 
+      {
+
+        flex: 1;
+        font-size: 16px;
+        @include trans;
+        text-align: left;
+        font-weight: 500;
+      }
+    }
+    .step1_span:hover ,
+    .step1_span:first-of-type
+    {
+      background-color: #cadae6;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      span 
+      {
+        font-weight: bold;
+        color: #156dc5;
+      }
+       i 
+       {
+         color:  #156dc5;
+       }
+    }
+   
+    
+  }
+  .step_two
+  {
+    .step_twoall
+    {
+      .step2text
+      {
+        text-transform: capitalize;
+         padding: 10px;
+         margin-bottom: 5px;
+        h4 
+        {
+    color: $maincolor;
+    font-weight: bold;
+    span 
+    {
+      color:$thrcolor;
+      font-weight: 500;
+     span 
+     {
+       color: $maincolor;
+       font-size: 20px;
+     }
+        }
+       
+        }
+      }
+      .step2_email
+      {
+        box-shadow:3px 0px 15px rgb(148, 148, 148);
+        width: 100%;
+        background-color: #1974D2;
+        padding: 25px 20px;
+        border-radius: 10px;
+        position: relative;
+         i
+         {
+           position: absolute;
+           top: 52%;
+           left: 8%;
+           font-size: 18px;
+         }
+        h4 
+        {
+          color: $seccolor;
+          font-size: 20px;
+        }
+        input 
+        {
+          border: 2px solid transparent;
+          @include trans;
+          &:focus 
+          {
+            outline: none;
+            border: 2px solid $thrcolor;
+            box-shadow:3px 0px 15px rgb(82, 82, 82);
+          }
+          width: 97%;
+          border-radius:5px;
+          padding: 20px;
+          padding-left: 60px;
+          height: 80px;
+          margin: 20px auto 25px;
+          font-size: 18px;
+        }
+      }
+    }
+    .step_twoall:nth-of-type(2)
+    {
+      h5 
+      {
+        position: absolute;
+        top: 52%;
+        right: 40px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      h6 
+      {
+        position: absolute;
+        top: 29%;
+        text-transform: capitalize;
+        color: $seccolor;
+        right: 30px;
+        font-size: 14px;
+      }
+      input[type="file"]
+      {
+       position: absolute;
+       top: 58px;
+       left: 20px;
+       width: 400px;
+       height: 80px;
+       border: 3px solid red;
+       opacity: 0;
+       cursor: pointer;
+      }
+    }
+  }
+   .step_two_last
+  {
+    text-transform: capitalize;
+    margin-top: 30px;
+      h4 
+      {
+  color: $maincolor;
+  font-weight: bold;
+  span 
+  {
+    color:$thrcolor;
+    font-weight: 500;
+    font-size: 21px;
+  }
+    }
+    .step_two_last_card 
+    {
+     
+       .accordion
+      {
+        background-color: $seccolor;
+        box-shadow:3px 0px 15px rgb(148, 148, 148);
+        border-radius: 10px;
+       .card 
+       {
+        button
+        {
+          color: $thrcolor;
+          text-transform: capitalize;
+          font-size: 18px;
+         span 
+         {
+          font-weight: bold;
+         }
+          &:hover ,&:focus 
+          {
+            color: $maincolor;
+            text-decoration: none;
+          }
+        }
+         .card-body 
+         {
+           position: relative;
+             i
+             {
+               position: absolute;
+               top: 26%;
+               left: 10%;
+               font-size: 18px;
+             }
+            h4
+            {
+              color: $thrcolor;
+              font-size: 17px;
+              position: absolute;
+              top: 25%;
+              right: 15%;
+              font-weight: bold;
+            }
+            input 
+            {
+              opacity: 0;
+              @include trans;
+              border: 2px solid lightgray;
+              &:focus 
+              {
+                outline: none;
+                border: 2px solid $thrcolor;
+                box-shadow:3px 0px 15px rgb(82, 82, 82);
+              }
+              width: 360px;
+              border-radius:5px;
+              padding: 20px;
+              padding-left: 60px;
+              height: 60px;
+              font-size: 18px;
+            }
+            input[type="file"]
+            {
+              position: absolute;
+              top: 20%;
+              right: 5%;
+              width: 360px;
+            }
+          
+           span ,img
+           {
+             width: 55px;
+             display: inline-block;
+             height: 55px;
+             border-radius: 50%;
+             cursor: pointer;
+           transition: all .1s ease-in-out;
+           margin-bottom: 5px;
+           margin-right: 10px;
+           }
+           span:first-of-type 
+           {
+             background-color: #000;
+           }
+           span:nth-of-type(2)
+           {
+             background-color: #7E3700;
+           }
+           span:nth-of-type(3)
+           {
+             background-color: #E91E63;
+           }
+           span:nth-of-type(4)
+           {
+             background-color: #F44336;
+           }
+           span:nth-of-type(5)
+           {
+             background-color: #9C27B0;
+           }
+           span:nth-of-type(6)
+           {
+             background-color:#550000;
+           }
+           span:nth-of-type(7)
+           {
+             background-color: #52479D;
+           }
+           span:nth-of-type(8)
+           {
+             background-color: #FFC107;
+           }
+           span:nth-of-type(9)
+           {
+             background-color: #55AA55;
+           }
+           span:nth-of-type(10)
+           {
+             background-color: #044C4C;
+           }
+            span:nth-of-type(11)
+            {
+              background-color: #554F00;
+            }
+            span:nth-of-type(12)
+            {
+              background-color: #00BCD4;
+            }
+            span:nth-of-type(13)
+            {
+              background-color: #FF9800;
+            }
+         }
+       }
+       .card:nth-of-type(4) button span 
+       {
+         font-size: 15px;
+         margin-left: 23px;
+       }
+      }
+    }
+  }
+  .step_four
+  {
+    margin-top: 0px;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 10px;
+    padding-bottom: 30px;
+    box-shadow:3px 0px 15px rgb(148, 148, 148);
+    background-color: $seccolor;
+    .step4text
+    {
+       padding: 15px;
+       padding-bottom: 20px;
+      h4 
+      {
+  color: $maincolor;
+  font-weight: bold;
+   span 
+   {
+     color: $thrcolor;
+     font-size: 21px;
+     font-weight: 500;
+   }
+      }
+    }
+    .step4img
+    {
+      width: 200px;
+      height: 200px;
+ margin-bottom: 30px;
+ margin-left: 70px;
+      img 
+      {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        
+      }
+    }
+    .step4form
+    {
+      form 
+      {
+        text-transform: capitalize;
+        padding-left: 20px;
+        padding-right: 20px;
+        label 
+        {
+          color:rgb(54, 54, 54);
+          margin:0px;
+          font-weight: bold;
+          font-size: 13px;
+        }
+        input 
+        {
+          width:100%;
+          padding: 20px;
+          height: 35px;
+          border:2px solid rgb(224, 224, 224);
+          border-radius: 5px;
+          @include trans;
+          &:focus 
+          {
+            outline: none;
+            border: 2px solid $thrcolor;
+            box-shadow: 3px 0px 10px rgb(112, 112, 112);
+          }
+        }
+        .choose 
+        {
+          display: flex;
+          margin-top: 10px;
+          margin-bottom: 20px;
+          span 
+          {
+            flex: 1;
+            margin-right: 25px;
+            margin-top: 7px;
+            font-weight: normal;
+            span 
+            {
+              font-weight: 900;
+            }
+          }
+          .custom-select
+          {
+            flex: 1;
+            cursor: pointer;
+          }
+        }
+        .link_butt 
+        {
+          width:86%;
+          height: 50px;
+          line-height: 50px;
+          color: $seccolor;
+          cursor: pointer;
+          border-radius: 30px;
+          margin:0px auto;
+          background-color: #1974D2;
+        }
+      }
+    }
+  }
+}
+// Start  Section Create_Flowcode
+/* ========================================== */
+/* ========================================== */
+// Start Section How_To_Flowcode
+.How_To_Flowcode
+{
+    padding-bottom: $paddb;
+   padding-top: $paddt;
+  span 
+   {
+     color:$maincolor ;
+   }
+    .flowcode-section-text
+    {
+     padding-left: 50px;
+      margin:20px auto 70px;
+      text-transform: capitalize;
+      h3 
+      {
+        font-weight: bold;
+        font-size: 28px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+      }
+       p 
+       {
+         line-height:2;
+         width: 85%;
+         font-size: 500;
+         font-size: 18px;
+         color: rgb(109, 109, 109);
+  
+       }
+    }
+  .flowcode-section-img
+  {
+width: 85%;
+margin: 20px auto;
+position: relative;
+&:after 
+{
+  position: absolute;
+  content: "";
+  background-color: $maincolor;
+  width: 2px;
+  height: 280px;
+  right: -41px;
+  top: 30px;
+}
+&::before 
+{
+  position: absolute;
+  content: "1";
+  background-color: $maincolor;
+  width: 50px;
+  font-size: 27px;
+  height: 50px;
+  padding-left: 20px;
+  padding-top: 3px;
+  line-height: 50px;
+  color: $seccolor;
+  border-radius: 50%;
+  right: -65px;
+  top: -30px;
+}
+img 
+{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 3px 0px 14px rgb(58, 57, 57);
+}
+  }
+  .flowcode-section-img.flowtwo
+  {
+&:after 
+{
+  left: -71px;
+  top: 75px;
+  height: 250px;
+}
+&::before 
+{
+  content: "2";
+  padding-left: 17px;
+  left: -95px;
+  top: 20px;
+}
+  }
+  .flowcode-section-img.flowthree
+  {
+      width: 85%;
+&:after 
+{
+  top: 95px;
+  height: 200px;
+}
+&::before
+{
+  content: "3";
+  top: 35px;
+}
+  }
+ 
+}
+// End Section How_To_Flowcode
+/* ========================================== */
+/* ========================================== */
+// Start Section Questions
+.Questions
+{
+  .head 
+  {
+    span 
+    {
+      color: $maincolor;
+    }
+  }
+    padding-top: $paddt;
+    padding-bottom: $paddb; 
+    background-color: $mainbg;
+    .questionalll
+    {
+      margin-top: 110px;
+      .Questions_img 
+      {
+        margin-top: -50px;
+        height: 550px;
+        width: 90%;
+        margin: 0px auto 40px;
+        img 
+        {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .accordion
+      {
+        .card 
+        {
+          // border: none;
+          background-color: $seccolor;
+          border-bottom:1px solid lightgray;
+          button
+          {
+            text-transform: capitalize;
+            font-size: 18px;
+            font-weight: bold;
+            &:hover ,&:focus 
+            {
+              color: $thrcolor;
+              text-decoration: none;
+            }
+          }
+          .card-body 
+          {
+            color: rgb(112, 110, 110);
+            text-transform: capitalize;
+            line-height: 1.8;
+          }
+        }
+      }
+    }
+ 
+}
+// End Section Questions
+/* ========================================== */
+/* ========================================== */
+// Start Section color_boxtwo
+.color_boxtwo
+{
+    padding-top: $paddt;
+    padding-bottom: $paddb; 
+    .color_box
+    {
+        width: 100%;
+        height: 320px;
+        border-radius: 10px;
+        background-color: #A2D3FB;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        text-align: center;
+        h3 
+        {
+            color: $thrcolor;
+            text-transform: capitalize;
+            font-size: 30px;
+            font-weight: bold;
+            padding-top: 25px;
+            margin-bottom: 0px;
+            span 
+            {
+                color: #0f88e4;
+            }
+        }
+        p 
+        {
+            text-transform: capitalize;
+            color: $thrcolor;
+            font-weight: 500;
+            font-size: 20px;
+            margin-top: 10px;
+            width: 100%;
+        }
+        .link_butt 
+        {
+             margin: 0px auto 25px;
+    width: 200px;
+        }
+    }
+}
+// End Section color_boxtwo
+/* ========================================== */
+/* ========================================== */
+// ========== Media Query ===================
+@media (max-width:992px)
+{
+  .How_To_Flowcode
+  {
+    .flowcode-section-img
+    {
+      &:after 
+      {
+        height: 350px;
+      }
+    }
+    .flowcode-section-img.flowtwo
+    {
+  &:after 
+  {
+    left: -41px;
+    height: 360px;
+  }
+  &::before 
+  {
+    left: -65px;
+  }
+    }
+  }
+}
+// =====================================
+
+// Slider All ==========================
+@media (max-width:768px)
+{
+// ====================================
+.Create_Flowcode
+{
+  margin-top: -570px !important;
+  padding-bottom: $paddb;
+  padding-top: 60px;
+  .step_one ,.step_two,.step_two_last ,.step_four
+  {
+ width: 80%;
+ margin: 0px auto 30px;    
+  }
+  .step_two .step_twoall .step2_email  > input
+  {
+width: 90%;
+margin: 0px auto;  
+  }
+}
+// ====================================
+.How_To_Flowcode 
+{
+    padding-top: $paddt + 20px;
+    .head 
+    {
+        &:after 
+        {
+            left: 42.5%;
+        }
+    }
+    .flowcode-section-img
+    {
+  width: 90%;
+  margin-top:30px ;
+  margin-bottom: 30px;
+  margin-right: 0px;
+  
+  &:after 
+  {
+    height: 545px;
+    left: -31px;
+    top: 30px;
+
+  }
+  &::before 
+  {
+    left: -55px;
+    top: -30px;
+  }
+    }
+    .flowcode-section-img.flowtwo
+    {
+  &:after 
+  {
+    left: -30px;
+    top: -230px;
+    height: 490px;
+  }
+  &::before 
+  {
+    left: -55px;
+    top: -290px;
+  }
+    }
+    .flowcode-section-img.flowthree
+    {
+  &:after 
+  {
+    left: -51px;
+    height: 360px;
+  }
+  &::before 
+  {
+    left: -75px;
+  }
+ 
+    }
+}
+// ====================================
+ .color_boxtwo
+{
+    .color_box
+    {
+       
+        height: 400px;
+        h3 
+        {
+            font-size: 24px;
+        }
+        p 
+        {
+            font-size: 16px;
+            margin-top: 0px;
+        }
+        .link_butt 
+        {
+             margin: 0px auto 45px;
+        }
+    }
+}
+// =====================================
+.Questions 
+{
+  .head 
+  {
+      &:after 
+      {
+          left: 42.5%;
+      }
+  }
+}
+// ======================================
+}
+/* ========================================== */
+// Services_about
+@media (max-width:575px)
+{
+  
+// =========================================
+}
+/* ========================================== */
+/* ========================================== */

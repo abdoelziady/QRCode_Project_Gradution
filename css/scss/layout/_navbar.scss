@@ -1,0 +1,352 @@
+
+/* ========================================== */
+/* ========================================== */
+@import "../helpers/_rulesstyle";
+/* ========================================== */
+ .header
+ {
+     position: relative;
+     .navbar
+     {
+         background-color: $maincolor;
+         padding-top: 12px;
+         padding-bottom: 12px;        
+       .navbar-toggler {
+            padding: 0px;
+            font-size: 1.55rem;
+            line-height: 1;
+           @include trans;
+           border: none;
+        &:focus {
+            outline: 0px;
+        }
+        span i {
+            font-size:$mainsize + 14;
+            @include trans;
+            color: $seccolor;
+        }
+        
+    }
+        .navbar-brand {
+            font-size: $mainsize + 6 ;   ;
+            color: $seccolor;
+            letter-spacing: .4px;
+            font-weight: 900;
+            text-transform: capitalize;
+             @include trans;
+        &:hover
+        {
+            transform: scale(1.1);
+        }
+        
+     }
+    .navbar-nav
+    {
+        padding-left:50px;
+     .nav-item
+     {
+         position: relative;
+        .nav-link
+        {
+            font-size: $mainsize - 1;
+            margin: 0px 35px;
+                color: $seccolor;
+                text-transform: capitalize;
+                position: relative;
+                padding: 0px;
+&:before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: $seccolor;
+    transform: scaleX(0);
+     @include trans;
+}
+&:hover:before
+{
+    transform: scaleX(1)
+}
+&:after
+    {
+        content: "";
+        position: absolute;
+        left: -30px;
+        top: 3px;
+        height: 17px;
+        width: 2px;
+        background-color: $seccolor;
+    }
+    }
+    
+     }
+
+     .nav-item:first-of-type
+     {
+         .nav-link
+         {
+             &::after{
+                 background-color: transparent;
+             }
+         }
+     }
+     
+     .nav-item:last-of-type 
+     {
+         cursor: pointer;
+         position: relative;
+         @include trans;
+         &:hover .menu 
+         {
+          transform: scaleX(1);
+         }
+        
+ .menu
+{
+    z-index:4;
+    position: absolute;
+    top:40px;
+    left: 15px;
+    display: flex;
+    padding: 0px;
+    margin:0px;
+    flex-direction: column;
+    @include trans;
+    transform: scaleX(0);
+    border-top: 2px solid $seccolor;
+     a
+    {
+        display: inline-block;
+      font-size:14px;
+        letter-spacing:1px;
+        cursor: pointer;
+        text-transform:capitalize;
+        color: $seccolor;
+        padding: 10px;
+        width: 120px;
+        height:45px;
+        line-height: 25px;
+        text-decoration: none;
+        color: $seccolor;
+        background-color: $maincolor;
+       @include trans;
+     &:hover
+{
+    color:$maincolor;
+    background-color: $seccolor;
+    font-weight:bold; 
+}
+    }
+    &:hover
+    {
+     border-top: 2px solid $thrcolor;
+    }
+}
+     }
+   
+     .nav-item.navMenu 
+     {
+        .nav-link 
+        {
+           &:before 
+           {
+            background-color: $maincolor;
+           }
+        }
+     }
+     .nav-item.activeitem
+     {
+         .nav-link
+         {
+             &::after{
+                 background-color: transparent;
+             }
+             &:before 
+             {
+                transform: scaleX(1);
+             }
+         }
+     }
+     .nav-item.activeitemall
+     {
+         .nav-link
+         {
+             &:before 
+             {
+                transform: scaleX(1);
+             }
+         }
+     }
+    }
+    .form-navbar
+     {
+         .log,.link_butt
+         {
+             color: $seccolor;
+             text-transform: uppercase;
+             text-decoration: none;
+             font-weight: bold;
+         }
+         .log 
+         {
+             margin-right: 40px;
+             font-size: $mainsize - 1;
+             position: relative;
+            transform: translateY(-14px);
+             display: inline-block;
+             &:before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: $seccolor;
+    transform: scaleX(0);
+     @include trans;
+}
+&:hover:before
+{
+    transform: scaleX(1)
+}
+         }
+         .link_butt
+         {
+             width: 120px;
+             margin-top: 5px;
+             display: inline-block;
+             height: 40px;
+             line-height: 40px;
+         }
+         
+     }
+     }
+ }
+ .header 
+ {
+     .navbar 
+     {
+         .form-navbar 
+         {
+             .activenav 
+             {
+                &:before 
+                {
+                   transform: scaleX(1);
+                }
+             }
+         }
+     }
+ }
+/* ========================================== */
+/* ========================================== */
+// ========== Media Query ===================
+/* ========================================== */
+/* ========================================== */
+@media (max-width:992px)
+{
+    .header
+    {
+        .navbar
+        {
+            .navbar-nav
+            {
+                padding-bottom:50px;
+                padding-left:0px;
+                padding-top: 10px;
+                width: fit-content;
+            .nav-item
+     {
+            .nav-link
+        {
+            
+            margin: 20px 0px; 
+            &:after
+            {
+                display: none;
+            }
+        }
+    }
+            }
+        }
+    }  
+    .header 
+    {
+        .navbar
+        {
+            .navbar-nav
+            {
+                .nav-item:last-of-type 
+            {
+                 .menu
+       {
+           position: absolute;
+           top:60px;
+           flex-direction: row;
+           left: 0px;
+       }
+    }
+            }
+        }
+    }
+}
+/* ========================================== */
+/* ========================================== */
+@media (min-width:992px) and (max-width:1190px)
+{
+    .header
+    {
+        .navbar
+        {
+            .navbar-nav
+            {
+            padding-left: 10px;
+            .nav-item
+     {
+            .nav-link
+        {
+            margin: 0px 25px;
+        }
+    }
+            }
+            .log 
+            {
+                margin-right: 0px;
+            }
+        }
+    }    
+}
+/* ========================================== */
+/* ========================================== */
+@media (max-width:576px)
+{
+    .header 
+    {
+        .navbar 
+        {
+            .navbar-nav
+            {
+            .nav-item:last-of-type 
+            {
+                margin-bottom: 10px;
+                .menu
+                {
+                     a
+                    {
+                      font-size:12px;  
+                        text-align: left;
+                        padding: 10px 13px;
+                        width: fit-content;
+                        height:40px;
+         
+                }
+            }
+            }
+        }
+    }
+    }
+}

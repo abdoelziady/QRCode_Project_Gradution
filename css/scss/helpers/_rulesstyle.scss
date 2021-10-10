@@ -1,0 +1,64 @@
+/* ========================================== */
+/* ========================================== */
+/*************** Start Varaibles ************/
+$maincolor:#1974D2;
+// #1E95F3
+$seccolor:#fff;
+$thrcolor:#242424;
+$mainsize:16px;
+$mainbg: #eeeeee;
+$paddt: 80px;
+$paddb: 80px;
+$mainsha: 3px 4px 11px rgb(105, 105, 105);
+$secbuttsha:0px 0px 10px rgb(90, 90, 90);
+/*************** End Varaibles **************/
+/* ========================================== */
+/*************** Start Extend ************/
+.varspan 
+{
+    border:3px solid $maincolor;
+}
+// ================================================
+@mixin padd {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+@mixin positionabs {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   left: 0px;
+   top: 0px;
+}
+@mixin trans
+{
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+@mixin sectrans
+{
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+/*************** End Extend **************/
+/* ========================================== */
+/*************** Start Mains Rules ************/
+html 
+{
+    scroll-behavior: smooth;
+}
+* 
+{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body
+{
+    font-family: 'Josefin Sans', sans-serif;
+}
+/*************** End Mains Rules **************/

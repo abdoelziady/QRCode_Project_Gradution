@@ -1,0 +1,163 @@
+// =================================
+// =================================
+@import "../helpers/_rulesstyle";
+// =================================
+// Loader 
+// =================================
+.loader-wrapper
+{
+position: fixed;
+width:100%;
+height:100%;
+background-color: rgba($color: #000000, $alpha: .9);
+top: 0px;
+left:0px;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 99999;
+    .lds-ripple {
+        display: inline-block;
+        position: relative;
+        width: 120px;
+        height: 120px;
+      }
+      .lds-ripple div {
+        position: absolute;
+        border: 4px solid $maincolor;
+        opacity: 1;
+        border-radius: 50%;
+        animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+      }
+      .lds-ripple div:nth-child(2) {
+        animation-delay: -0.5s;
+      }
+      @keyframes lds-ripple {
+        0% {
+          top: 36px;
+          left: 36px;
+          width: 0;
+          height: 0;
+          opacity: 1;
+        }
+        100% {
+          top: 0px;
+          left: 0px;
+          width: 72px;
+          height: 72px;
+          opacity: 0;
+        }
+      }  
+}
+// =================================
+// TopButton
+// =================================
+.topbtn {
+    background-color: $seccolor;
+    border: 3px solid $maincolor;
+    color: $maincolor;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: fixed;
+    font-size: $mainsize;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 50%;
+    @include trans;
+    box-shadow: $mainsha;
+    z-index: 2;
+    outline: none;
+    &:focus 
+    {
+        outline: none;
+    } 
+       &:hover {
+    background-color: $maincolor;
+    border: 3px solid $maincolor;
+    color: $seccolor;
+    box-shadow: 2px 3px 10px gray;
+    transform: translateY(-10px);
+    outline: none; 
+              }
+    i 
+    {
+        font-size: 21px;
+    }
+}
+// =================================
+// Header h2
+    .head 
+    {
+        font-size: 50px;
+        color: $thrcolor;
+        margin-bottom: 90px;
+        text-align: center;
+        letter-spacing: 1px;
+        font-weight:bold;
+        text-transform: capitalize;
+        position: relative;
+        &:after 
+        {
+            content: "";
+            display: block;
+            position: absolute;
+            background-color: $maincolor;
+            bottom: -20px;
+            left: 47.5%;
+            width: 70px;
+            height: 4px;
+            border-radius: 5px;
+        }
+    }
+// =================================
+// link Button
+.link_butt
+{
+    text-align: center;
+    // margin: 50px auto 20px;
+    width: 180px;
+    height: 45px;
+    line-height: 45px;
+    display: block;
+    border-radius:20px;
+    background-color: $maincolor;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $seccolor;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    @include trans;
+    position: relative;
+    overflow: hidden;
+    box-shadow:3px 3px 10px $thrcolor;
+    &:after 
+    {
+        position: absolute;
+        content: "";
+        width: 15%;
+        height: 220%;
+        left: -35px;
+        top: -50px;
+        transition: all 750ms cubic-bezier(0.19, 1, 0.22, 1);
+        transform:rotate(35deg);
+        background-color:rgb(116, 162, 180);
+    }
+    &:hover {
+        transform: scale(1.1);
+        text-decoration: none;
+        color: $seccolor;
+    }
+    &:hover:after 
+    {
+        left: 120%;
+        top: -20px;
+    }
+}

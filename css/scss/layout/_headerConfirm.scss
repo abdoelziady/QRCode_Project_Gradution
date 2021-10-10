@@ -1,0 +1,92 @@
+
+/* ========================================== */
+/* ========================================== */
+@import "../helpers/_rulesstyle";
+/* ========================================== */
+
+    .confirm_Box
+     {
+         margin-top: -430px;
+         padding-bottom: 150px;
+         text-align: center;
+         text-transform: capitalize;
+         .navbar-brand2 {
+            font-size: $mainsize + 35;
+            color: $maincolor;
+            letter-spacing: .4px;
+            font-weight: 900;
+            text-transform: capitalize;
+             @include trans;
+             span 
+             {
+                 font-size: 25px;
+                 color: $thrcolor;
+                 text-transform: capitalize;
+             }
+        &:hover
+        {
+            transform: scale(1.1);
+        }
+        
+     }
+     h3 
+     {
+         color: gray;
+         font-weight: lighter;
+         font-weight: 22px;
+         line-height: 45px;
+         margin:10px auto 30px;
+          span 
+          {
+font-weight: bold;
+font-size: 33px;
+          }
+     }
+     p 
+     {
+         color: rgb(139, 139, 139);
+         line-height: 35px;
+     }
+      .link_butt 
+      {
+  margin: 40px auto 40px;
+  width: 270px;
+      }      
+    }
+ .header 
+ {
+     .navbar 
+     {
+         .form-navbar 
+         {
+             .activenav 
+             {
+                &:before 
+                {
+                   transform: scaleX(1);
+                }
+             }
+         }
+     }
+ }
+/* ========================================== */
+/* ========================================== */
+/************ Start media Query ***************/
+/* ========================================== */
+@media (min-width:992px) and (max-width:1190px)
+{
+
+}
+/* ========================================== */
+@media (min-width:767px) and (max-width:991px)
+{
+}
+/* ========================================== */
+@media (max-width:766px)
+{
+     
+        .confirm_Box
+         {
+            margin-top: -480px;
+        }
+}

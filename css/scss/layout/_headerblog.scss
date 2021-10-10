@@ -1,0 +1,537 @@
+/* ========================================== */
+/* ========================================== */
+@import "../helpers/_rulesstyle";
+/* ========================================== */
+// Start Slider
+.slider_blog
+{
+    background-image: url(../../../imgs/blog/blog-header.jpeg);
+    margin-top: 75px;
+    margin-bottom: 0px !important;
+        width:100%;
+        height:450px;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center;
+        position:relative;
+        .navall
+        {
+            position: absolute;
+            bottom: 0px;
+            left: 10px;
+            .breadcrumb
+            {
+                background-color: transparent;
+                .breadcrumb-item
+                {
+                    a 
+                    {
+                        color: $maincolor;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .overlayall
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;  
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0,0,0, 0.7);
+            width: 100%;
+            height: 100%;
+        h1
+        {
+            position:absolute;
+            color: $maincolor;
+            font-size:80px;
+            text-transform:uppercase;
+            font-weight:bold;
+        }
+        }
+
+}
+// End Slider
+/* ========================================== */
+// Start Services
+.Services_blog
+{
+    margin-top: -180px !important;
+    padding-top: $paddt;
+    padding-bottom: $paddb - 20px;
+    .blog_contact 
+    {
+        .blog_contact_one
+        {
+            margin-bottom: 130px;
+            .firstblog1
+            {
+                .blog_img
+                {
+                    height: 350px;
+                    width: 100%;
+                    img 
+                    {
+                        height:  100%;
+                        width: 100%;
+                        border-radius: 5px;
+                        box-shadow: 4px 0px 13px rgb(151, 150, 150);
+                    }
+                }
+               a
+               {
+                color:$thrcolor;
+                font-size:23px;
+                text-decoration: none;
+                font-weight:bold;
+                padding:25px 0 0px;
+                display: inline-block;
+                line-height:30px;
+                 @include trans;
+                 &:hover 
+                 {
+                     color: $maincolor;
+                 }
+               }
+               span 
+               {
+                color:rgb(134, 134, 134);
+                font-size:16px;
+                text-transform: capitalize;
+                display: inline-block;
+                font-weight: normal;
+                margin-top: 10px;
+                margin-bottom: 5px;
+                span 
+                   {
+                    color:$maincolor;
+                    font-weight: bold;
+                    font-size: 18px;
+                   }
+               }
+               p 
+               {
+                color:rgb(90, 90, 90);
+                font-size:17px;
+                text-transform: capitalize;
+                line-height: 1.9;
+                margin-top: 0px;
+                a 
+                {
+                    text-decoration: none;
+                    font-weight:bold;
+                    font-size: 18px;
+                    display: inline;
+                    color: $maincolor;
+                }
+               }
+        hr
+    {
+        border:1px solid #eee;
+        margin:30px auto ;
+    }
+            }
+            .secondblog1 
+            {
+                position: relative;
+            .pagination
+            {
+                margin-top:30px ;
+                position:absolute;
+                left:30%;
+                li
+                {
+                    margin-left:9px;
+        border-radius:0px;
+                }
+                .page-item 
+                {
+                    .page-link
+                {
+                    border-radius: 0px; 
+                   @include trans;
+                   color:$thrcolor;
+                   padding: 10px 15px;
+                   font-size: 18px;
+                    &:hover
+                    {
+                      background-color:$maincolor;
+                        color:$seccolor;
+                    }
+                }
+                .page-link.activepage
+                {
+                    color:$maincolor;
+                    font-weight: bold;
+                }
+                }
+    
+            }   
+            }
+        }
+       .blog_contact_two
+       {
+        .firstblog2
+        {
+            .form-group
+            {
+                width: 97%;
+                margin:0px auto;
+                input 
+                {
+                    height: 45px;
+                    padding:10px;
+                    width: 100%;
+                    @include trans;
+                    &:focus 
+                    {
+                        outline: none;
+                        border: 1px solid $maincolor;
+                        box-shadow: 3px 0px 13px $maincolor;
+                    }
+                }
+            }
+            hr
+            {
+                border:1px solid #eee;
+                margin:30px auto ;
+            }
+            h4 
+            {
+                color:$thrcolor;
+                font-weight: bold;
+                font-size: 23px;
+            }
+            h4 + hr 
+            {
+                margin:15px auto 30px;
+            }
+            ul 
+            {
+                a
+                {
+                    display:block;
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    cursor: pointer;
+                    color: $maincolor;
+                    @include trans;
+                    margin-bottom: 13px;
+                    font-size:19px;
+                    &:hover 
+                    {
+                        color: $thrcolor;
+                    }
+                }
+            }
+        }
+        .secondblog2
+        {
+            hr
+            {
+                border:1px solid #eee;
+                margin:30px auto ;
+            }
+            h4 
+            {
+                color:$thrcolor;
+                font-weight: bold;
+                font-size: 23px;
+            }
+            h4 + hr 
+            {
+                margin:15px auto 30px;
+            }
+            ul 
+            {
+                li 
+                {
+                    margin-bottom: 15px;
+                   .media 
+                   {
+                       img 
+                       {
+                           height: 100px;
+                           width: 50%;
+                       }
+                       .media-body
+                       {
+                           width: 50%;
+                           text-transform: capitalize;
+                           padding-left: 15px;
+                           a 
+                           {
+                               text-decoration: none;
+                               font-weight: bold;
+                               cursor: pointer;
+                               color: $thrcolor;
+                               font-size: 17px;
+                               display:inline-block;
+                               @include trans;
+                               &:hover 
+                               {
+                                   color: $maincolor;
+                               }
+                           }
+                           h6 
+                           {
+                               margin-top: 10px;
+                               color: rgb(143, 142, 142);
+                           }
+                       }
+                   }
+                }
+            }
+        }
+        .thblog2
+        {
+            hr
+            {
+                border:1px solid #eee;
+                margin:30px auto ;
+            }
+            h4 
+            {
+                color:$thrcolor;
+                font-weight: bold;
+                font-size: 23px;
+            }
+            h4 + hr 
+            {
+                margin:15px auto 30px;
+            }
+            .gallery
+            {
+                img 
+                {
+                    width: 90px;
+                    height: 80px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        .forblog2 
+        {
+            hr
+            {
+                border:1px solid #eee;
+                margin:30px auto ;
+            }
+            h4 
+            {
+                color:$thrcolor;
+                font-weight: bold;
+                font-size: 23px;
+            }
+            h4 + hr 
+            {
+                margin:15px auto 30px;
+            }
+        .link_blog 
+         {
+            display: flex;
+            flex-direction: row;
+            a
+            {
+display: inline-block;
+color: $seccolor;
+text-decoration: none; 
+i 
+{
+    padding:11px 13px;
+background-color: $maincolor;
+color: $seccolor;
+margin-right: 20px;
+}
+            }
+         }
+        }
+        .fiveblog2
+        {
+            hr
+            {
+                border:1px solid #eee;
+                margin:30px auto ;
+            }
+            h4 
+            {
+                color:$thrcolor;
+                font-weight: bold;
+                font-size: 23px;
+            }
+            h4 + hr 
+            {
+                margin:15px auto 30px;
+            }
+            .tags_blog
+            {
+                a 
+                {
+                    padding: 7px 15px;
+                    background-color: rgb(243, 242, 242);
+                    border: 1px solid rgb(228, 226, 226);
+                    border-radius: 5px;
+                    margin-right: 10px;
+                    text-decoration: none;
+                    display: inline-block;
+                    margin-bottom: 10px;
+                    @include trans;
+                    &:hover 
+                    {
+                        color: $seccolor;
+                        background-color: $maincolor;
+                    }
+                    
+                }
+            }
+        }
+       }
+       
+    }
+}
+//End Services
+/* ========================================== */
+/* ========================================== */
+// Start Section about_info
+
+// End Section about_info
+/* ========================================== */
+/* ========================================== */
+// Start Section Flowcode
+
+// End Section Flowcode
+/* ========================================== */
+/* ========================================== */
+// Start Section color_boxone
+
+// End Section color_boxone
+/* ========================================== */
+/* ========================================== */
+// Start Section color_boxtwo
+
+// End Section color_boxtwo
+/* ========================================== */
+/* ========================================== */
+// Start Section qr_type
+
+// End Section qr_type
+/* ========================================== */
+/* ========================================== */
+// ========== Media Query ===================
+/* ========================================== */
+// Slider ==========================
+@media (max-width:992px)
+{
+    .Services_blog {
+        .blog_contact 
+        {
+            .blog_contact_two
+            {
+                .thblog2
+                {
+                    .gallery
+                    {
+                        img 
+                        {
+                            width: 130px;
+                            height: 100px;
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// Slider All ==========================
+@media (max-width:768px)
+{
+    .slider_blog
+{   
+        .navall
+        {
+            .breadcrumb
+            {
+                .breadcrumb-item
+                {
+                    a 
+                    {
+                       font-size: 15px;
+                    }
+                }
+            }
+        }
+    .overlayall
+    {
+    h1
+    {
+        font-size:65px;
+    }
+}
+}
+// ====================================
+.Services_blog
+{
+    margin-top: -180px !important;
+    padding-top: $paddt + 20px;
+}
+// =====================================
+}
+/* ========================================== */
+/* ========================================== */
+@media (max-width:575px)
+{
+// =========================
+// Start Services_blog
+.Services_blog
+{
+.blog_contact 
+{
+    .blog_contact_one
+    {
+        .firstblog1
+{
+.blog_img
+{
+height: 250px;
+}
+a
+{
+font-size:21px;
+}
+span 
+{
+font-size:15px;
+span 
+{
+font-size: 17px;
+}
+}
+p 
+{
+font-size:16px;
+a 
+{
+font-size: 17px;
+}
+}
+
+}
+.secondblog1 
+{
+.pagination
+{
+left:13%;
+}   
+}
+    }
+}
+}
+//End Services_blog
+// =========================================
+}
+/* ========================================== */
+/* ========================================== */

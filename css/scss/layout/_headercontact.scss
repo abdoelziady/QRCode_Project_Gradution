@@ -1,0 +1,461 @@
+/* ========================================== */
+/* ========================================== */
+@import "../helpers/_rulesstyle";
+/* ========================================== */
+.slider_contact
+{
+    background-image: url(../../../imgs/contact.jpeg);
+    margin-top: 75px;
+    margin-bottom: 0px !important;
+        width:100%;
+        height:450px;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center;
+        position:relative;
+        .navall
+        {
+            position: absolute;
+            bottom: 0px;
+            left: 10px;
+            .breadcrumb
+            {
+                background-color: transparent;
+                .breadcrumb-item
+                {
+                    a 
+                    {
+                        color: $maincolor;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .overlayall
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;  
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0,0,0, 0.7);
+            width: 100%;
+            height: 100%;
+        h1
+        {
+            position:absolute;
+            color: $maincolor;
+            font-size:80px;
+            text-transform:uppercase;
+            font-weight:bold;
+        }
+        }
+
+}
+/* ========================================== */
+/* ========================================== */
+.Services_contact
+{
+    margin-top: -180px !important;
+    padding-top: $paddt + 40px;
+    padding-bottom: $paddb;
+    background-color: $mainbg;
+   .Services_contact_section
+   {
+       margin-bottom: 50px;
+       background-color: $seccolor;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       align-items: center;
+       box-shadow: $secbuttsha;
+       height: auto;
+       padding: 20px;
+       text-transform: capitalize;
+       i 
+       {
+           flex: 2;
+           color: rgb(87, 87, 87);
+           font-size: 45px;
+           transform: translateY(-30px);
+       }
+       .section_text
+       {
+           flex: 9;
+          a
+           {
+color: $maincolor;
+font-size:18px;
+font-weight: bold;
+           }
+           p 
+           {
+color: gray;
+font-weight: 500;
+font-size: 15px;
+padding-top: 3px;
+           }
+           .section_title
+           {
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-start;
+            align-items: center;
+            padding-top: 5px;
+           i 
+           {
+                  color: $seccolor;
+                  background-color: $maincolor;
+                  padding: 14px;
+                  border-radius: 50%;
+                  font-size: 15px;
+                  transform: translateY(-10px);
+           }
+           .section_title_article
+           {
+               padding-left: 10px;
+            h6 
+            {
+                font-size: 14px;
+                color: gray;
+                font-weight: 300;
+                margin-bottom: 0px;
+            }
+            p 
+            {
+                font-size: 14px;
+                color: gray;
+                font-weight: 300;
+                span 
+                {
+                    font-size: 15px;
+                color: gray;
+                font-weight:bold;
+                }
+            }
+        }
+           }
+       }
+
+   }
+}
+/* ========================================== */
+/* ========================================== */
+// Start Section Git in Touch
+.touch_contact
+{
+    padding-top: $paddt;
+    padding-bottom: $paddb;
+    .head 
+    {
+        letter-spacing: 3px;
+    }
+    .touch_form
+    {
+        margin:0px auto 40px;
+form 
+{
+    button
+    {
+        margin-top: 30px;
+        margin-left: 10px;
+        width: 250px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 19px;
+        border: 0px;
+        padding:7px 0px;
+        color: $seccolor;
+        background-color: $maincolor;
+        letter-spacing: .5px;
+        border-radius: 25px !important;
+        box-shadow:$secbuttsha;
+        @include trans;
+        position: relative;
+        overflow: hidden;            
+          svg 
+        {
+            position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        fill: transparent;
+         rect 
+         {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            top: 0px;
+            fill: transparent;
+            stroke-width: 4px;
+            stroke-dasharray: 500,500;
+            stroke-dashoffset: 0px ;
+            transition: 1s ease-in-out;
+         }
+        }
+        &:after 
+        {
+            position: absolute;
+            content: "";
+            width: 15%;
+            height: 220%;
+            left: -45px;
+            top: -50px;
+            transition: all 750ms cubic-bezier(0.19, 1, 0.22, 1);
+            transform:rotate(35deg);
+            background-color:rgb(99, 173, 202);
+        }
+        &:hover:after 
+        {
+            left: 120%;
+            top: -20px;
+        }
+                     &:hover
+                     {
+                        transform:scale(1.1);
+                     }
+    }
+    .form-group 
+    {
+        margin-top: 40px;
+        width:300px;
+        position: relative;
+        small 
+        {
+            position: absolute;
+            bottom: -25px;
+            left:0px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }         
+        i 
+        {
+            font-size: 8px;
+           transform: translateY(-1px);
+            color: red;
+        }   
+        label 
+        {
+            text-transform: capitalize;
+            font-weight: bold;
+            font-size: 17px;
+            margin-left: 5px;
+        }
+        input ,textarea
+        {
+            padding: 25px 15px;
+    width:350px;
+    font-size: 15px;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    box-shadow: 3px 0px 10px rgb(200, 200, 200);
+    @include trans;
+    &:focus
+    {
+        outline: none;
+        border: 1px solid lightgray;
+        box-shadow: 3px 0px 10px rgb(129, 129, 129);
+    }
+        }
+        textarea
+        {
+            border-radius: 15px;
+        }
+    }
+    .form-group:nth-child(4)
+    {
+        margin-top: 50px ;
+    }
+    .form-group:nth-child(4),
+    .form-group:last-of-type
+    {
+        width: 400px;
+        textarea 
+        {
+            width: 400px;
+        }
+    }
+}
+    }
+    .touch_img
+    {
+width: 95%;
+margin: 0px auto;
+// height: 600px;
+img 
+{
+    width: 100%;
+    height: 100%;
+}
+    }
+}
+// End Section Git in Touch
+/* ========================================== */
+/* ========================================== */
+// Start Section Mapp
+.map_contact
+{
+    margin:0px auto;
+    margin-top: $paddt - 30px;
+    margin-bottom: $paddb - 30px;
+    .mapouter {
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 100%;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 100%;
+  box-shadow:3px 0px 10px rgb(136, 135, 135);
+  iframe 
+  {
+    height: 500px;
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+}
+
+// End Section Mapp
+/* ========================================== */
+/* ========================================== */
+// Start Section Get Connected
+.links_contact_all
+{
+    padding-top: $paddt - 40px;
+    padding-bottom: $paddb;
+    .head 
+    {
+        padding-top: 20px;
+    }
+    .links_contact
+    {
+        transform: translateY(50px);
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+        grid-template-rows: repeat(auto-fill,minmax(100px,1fr));
+        grid-gap: 10px;
+        a 
+        {
+            padding: 20px;
+            background-image:
+         linear-gradient(45deg,#2573af,rgb(30, 152, 168) 10%,#1974D2,rgb(34, 92, 158));
+            background-size: 200%;
+            background-position: left;
+            height: 240px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+            text-decoration: none;
+            box-shadow: 3px 4px 11px rgb(105, 105, 105);
+            border-radius: 5px;
+            @include trans;
+            color: $seccolor;
+            &:hover 
+            {
+background-position: right;
+box-shadow: 3px 4px 10px rgb(66, 66, 66);;
+            }
+            i 
+            {
+                font-size: 50px;
+            }
+        }
+    }
+    .img_contact
+    {
+        width: 100%;
+        img 
+        {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+// End Section Get Connected
+/* ========================================== */
+/* ========================================== */
+// ========== Media Query ===================
+/* ========================================== */
+// Header , Slider ==========================
+@media (max-width:768px)
+{
+    .slider_contact
+{   
+        .navall
+        {
+            .breadcrumb
+            {
+                .breadcrumb-item
+                {
+                    a 
+                    {
+                       font-size: 15px;
+                    }
+                }
+            }
+        }
+    .overlayall
+    {
+    h1
+    {
+        font-size:65px;
+    }
+}
+}
+// =========================================
+.Services_contact
+{
+    margin-top: -180px !important;
+    .head 
+    {
+        &:after 
+        {
+            left: 42.5%;
+        }
+    }
+}
+.touch_contact
+{
+    .head 
+    {
+        &:after 
+        {
+            left: 42.5%;
+        }
+    }
+}
+.links_contact_all
+{
+    .head 
+    {
+        padding-top: 40px;
+        &:after 
+        {
+            left: 42.5%;
+        }
+    }
+}
+}
+/* ========================================== */
+/* ========================================== */
+// .links_contact_all
+@media (max-width:575px)
+{
+    .links_contact_all
+{
+    .links_contact
+    {
+        grid-template-columns: repeat(auto-fill,minmax(190px,1fr));
+}
+}
+}
+/* ========================================== */
+/* ========================================== */
